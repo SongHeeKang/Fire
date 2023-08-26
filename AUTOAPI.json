@@ -1,0 +1,669 @@
+{
+	"info": {
+		"_postman_id": "7347892e-f4a7-4844-848d-d0cb12ff66fe",
+		"name": "AUTO API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1544460"
+	},
+	"item": [
+		{
+			"name": "일별 박스오피스 API 서비스1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 300\", function () {",
+							"    pm.response.to.have.status(300);",
+							"});",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230720",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230720"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230610",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230610"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "일별 박스오피스 API 서비스10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"//Test2. Response time이 200ms 안이다",
+							"pm.test(\"Test2: Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230520",
+					"protocol": "http",
+					"host": [
+						"kobis",
+						"or",
+						"kr"
+					],
+					"path": [
+						"kobisopenapi",
+						"webservice",
+						"rest",
+						"boxoffice",
+						"searchDailyBoxOfficeList.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f5eef3421c602c6cb7ea224104795888"
+						},
+						{
+							"key": "targetDt",
+							"value": "20230520"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
